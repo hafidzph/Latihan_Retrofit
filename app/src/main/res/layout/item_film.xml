@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgFilm"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+        <TextView
+            android:id="@+id/titleFilm"
+            android:text="Judul Film"
+            android:layout_toEndOf="@+id/imgFilm"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/directorFilm"
+            android:text="Director Film"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_toEndOf="@+id/imgFilm"
+            android:layout_below="@+id/titleFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dateFilm"
+            android:text="Tanggal Film"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgFilm"
+            android:layout_below="@+id/directorFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
